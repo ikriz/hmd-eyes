@@ -379,8 +379,7 @@ public class Recorder{
 
 	public static void Start(){
 		RecorderGO = new GameObject ("RecorderCamera");
-		RecorderGO.transform.parent = Camera.current.gameObject.transform;
-
+		RecorderGO.transform.SetParent(Camera.current.gameObject.transform);
 		RecorderGO.transform.localPosition = Vector3.zero;
 		RecorderGO.transform.localRotation = Quaternion.identity;
 
