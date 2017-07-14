@@ -381,6 +381,9 @@ public class Recorder{
 		RecorderGO = new GameObject ("RecorderCamera");
 		RecorderGO.transform.parent = Camera.current.gameObject.transform;
 
+		RecorderGO.transform.localPosition = Vector3.zero;
+		RecorderGO.transform.localRotation = Quaternion.identity;
+
 		RecorderGO.AddComponent<FFmpegOut.CameraCapture> ();
 		Camera c = RecorderGO.GetComponent<Camera> ();
 		c.targetDisplay = 1;
