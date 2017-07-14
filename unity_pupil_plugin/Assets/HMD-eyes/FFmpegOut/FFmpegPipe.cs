@@ -33,7 +33,7 @@ namespace FFmpegOut
 
 			name = "Unity_" + Camera.main.name;
 			string date = DateTime.Now.ToString ("yyyy_MM_dd");
-			string path = Application.dataPath + "/" + date;
+			string path = Application.dataPath + "/HMD-eyes/" + date;
 
 
 			if (pupilTracker.recorder.isCustomPath)

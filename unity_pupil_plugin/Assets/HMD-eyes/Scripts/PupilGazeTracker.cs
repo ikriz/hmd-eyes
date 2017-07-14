@@ -906,10 +906,10 @@ public class PupilGazeTracker:MonoBehaviour
 
 	public void WriteStringToFile(string dataString, string fileName = "defaultFilename"){
 		var bytes = System.Text.Encoding.UTF8.GetBytes (dataString);
-		File.WriteAllBytes (Application.dataPath + "/" + fileName, bytes);
+		File.WriteAllBytes (Application.dataPath + "/HMD-eyes/" + fileName, bytes);
 	}
 	public string ReadStringFromFile(string fileName = "defaultFilename"){
-		string _str = File.ReadAllText (Application.dataPath + "/" + fileName);
+		string _str = File.ReadAllText (Application.dataPath + "/HMD-eyes/" + fileName);
 		return _str;
 	}
 
