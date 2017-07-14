@@ -379,7 +379,7 @@ public class Recorder{
 
 	public static void Start(){
 		RecorderGO = new GameObject ("RecorderCamera");
-		RecorderGO.transform.parent = Camera.main.gameObject.transform;
+		RecorderGO.transform.parent = Camera.current.gameObject.transform;
 
 		RecorderGO.AddComponent<FFmpegOut.CameraCapture> ();
 		Camera c = RecorderGO.GetComponent<Camera> ();
